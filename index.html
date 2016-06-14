@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>迷ってますか？？</title>
+  <script type="text/javascript" src="main.js"></script>
+  <script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12" style="background-color:white;">
+  <p>これから、あなたが就職するうえで志望する業界についてたずねます。</p>
+  <p>志望する度合いを1:絶対に志望しない　から、4:強く志望するまでで評定してください。</p>
+  <p>開始ボタンをクリックすると、業界名がこの下に表示されます。</p>
+
+  <h1 id="set"></h1>
+
+  <p>業界名がこの上に表示されます。</p>
+  <p>志望度の書かれたボタンを押してください。</p>
+</div>
+
+  <div class="col-xs-6">
+  <form id="start">
+    <button type="button" class="btn btn-primary" onclick="btn_onclick()"><p id="nav">開始</p></button>
+  </form>
+
+   <h1 id="instruct">ここに教示が出ます。</h1>
+  <br>
+
+</div>
+  <div class="col-xs-6">
+  <form id="judge1">
+    <button type="button" class="btn btn-defalut" onclick="btn_onclick_f()">1:絶対に志望しない</button>
+　</form>
+  <br>
+  <form id="judge2">
+    <button type="button" class="btn btn-defalut" onclick="btn_onclick_f()">2:志望しない</button>
+  </form>
+  <br>
+</div>
+<div class="col-xs-6">
+  <form id="judge3">
+    <button type="button" class="btn btn-defalut" onclick="btn_onclick_f()">3:志望する</button>
+  </form>
+  <br>
+  <form id="judge4">
+    <button type="button" class="btn btn-defalut" onclick="btn_onclick_f()">4:強く志望する</button>
+  </form>
+</div>
+
+  <div id="reslut"></div>
+</div>
+</div>
+
+</body>
+
+</html>
